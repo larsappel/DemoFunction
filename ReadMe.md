@@ -20,11 +20,15 @@ Create supporting Azure resources for your function
 Deploy the function project to Azure
 func azure functionapp publish DemoFunc241013
 
-Add packages
+```bash
+#Add packages
 dotnet add package Newtonsoft.Json
 dotnet add package Azure.Data.Tables
+```
 
-local.settings.json
+
+> local.settings.json
+```json
 {
     "IsEncrypted": false,
     "Values": {
@@ -32,3 +36,4 @@ local.settings.json
         "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
     }
 }
+```
