@@ -16,9 +16,10 @@ func start
 
 Create supporting Azure resources for your function
 
-
-Deploy the function project to Azure
+```bash
+# Deploy the function project to Azure
 func azure functionapp publish DemoFunc241013
+```
 
 ```bash
 #Add packages
